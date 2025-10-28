@@ -1,10 +1,215 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="de">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Hello World</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Zoé Pehlke">
+    <meta name="description"
+        content="ZOÉ-PEHLKE.de ist die Portfolio-Webseite von mir, Zoé Pehlke. Hier möchte ich meine Arbeiten vorstellen und eine Kontaktmöglichkeit bieten.">
+    <title>Zoé Pehlke | Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Font-Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="styles/glide.core.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="styles/style.css" rel="stylesheet">
+
+
+    <!-- generated from https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#2e68c4">
+    <meta name="msapplication-TileColor" content="#f5fdff">
+    <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
-  <h1>Hello World from GitHub Pages!</h1>
+    <header>
+        <div class="container alignNav">
+            <nav class="sticky-top">
+                <div class="nav-elements">
+                    <a class="nav-link active" href="#welcome">Home</a>
+                    <a class="nav-link" href="#projects">Arbeiten</a>
+                    <a class="nav-link" href="#exhibitions">Ausstellungen</a>
+                    <a class="nav-link" href="#contact">Kontakt</a>
+                </div>
+                <div class="bgLeft"></div>
+                <div class="bgRight"></div>
+                <div class="nav-highlighter"></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+
+        <section id="welcome">
+<!--             <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide" id="slide-a">
+                            <div class="container">
+                                <a href="./chiro.html">
+                                    <div class="hero-heading">
+                                        <h1>Chiro</h1>
+                                        <h2>Fahrradschläuche, Stecknadeln & Nägel</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="glide__slide" id="slide-b">
+                            <div class="container">
+                                <a href="./neue-welten.html">
+                                    <div class="hero-heading">
+                                        <h1>Neue Welten</h1>
+                                        <h2>Fotografie-Reihe</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="glide__slide" id="slide-c">
+                            <div class="container">
+                                <a href="./tape-und-papier.html">
+                                    <div class="hero-heading">
+                                        <h1>Tape und Papier</h1>
+                                        <h2>Werkreihe aus Klebeband und Zeitungspapier</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                </div>
+            </div> -->
+        <div id="canvasContainer">
+        </div>
+        <div style="display: none;">
+            <a href="./chiro.html" id="chiro-link">Chiro</a>
+            <a href="./tape-und-papier.html" id="tape-papier-link">Tape und Papier</a>
+        </div>
+
+
+        </section>
+
+        <section id="projects">
+            <div class="container reveal ">
+                <h1 class="mt10">Arbeiten</h1>
+                <h3>Hier ist eine Auswahl verschiedener beispielhafter Projekte, an denen ich gearbeitet habe:</h3>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="hemd">
+                        <div class="projectContent">
+                            <a href="./chiro.html"><img class="bg-image" src="./img/Chiro/Chiro_Preview.webp"
+                                    alt="Chiro"></a>
+                            <h2>Chiro</h2>
+                            <p class=description>Fahrradschläuche, Stecknadeln & Nägel</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="music">
+                        <div class="projectContent">
+                            <a href="./konstellationen.html"><img class="bg-image"
+                                    src="./img/Konstellationen/Konstellationen_Preview.webp" alt="Konstellationen"></a>
+                            <h2>Konstellationen</h2>
+                            <p class=description>Fahrradschläuche, Stecknadeln & Nägel</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="osnahack">
+                        <div class="projectContent">
+                            <a href="./tape-und-papier.html"><img class="bg-image"
+                                    src="./img/Tape_und_Papier/Tape_und_Papier_Preview.webp" alt="Tape und Papier"></a>
+                            <h2>Tape und Papier</h2>
+                            <p class=description>Werkreihe aus Klebeband und Zeitungspapier</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="exhibitions">
+            <div class="container reveal">
+                <h1 class="mt10">Ausstellungen</h1>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 projectContent">
+                        <img src="./img/Plakat/Jahresausstellung.webp" alt="Jahresausstellung 2023">
+                        <h2>Jahresausstellung 2023</h2>
+                        <p class=description>02.02.23 - 07.02.23 <br> Universität Osnabrück</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 projectContent">
+                        <img src="./img/Plakat/SkulpturgalerieCampus.webp" alt="Skulpturgalerie Campus">
+                        <h2>CAMPUS – Junge Kunst aus Osnabrück</h2>
+                        <p class=description>03.03.23 – 14.04.23 <br> Skulpturgalerie Osnabrück</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 projectContent">
+                        <img src="./img/Plakat/Skulpturgalerie3D23.webp" alt="Skulpturgalerie 3D 23">
+                        <h2>»3D’23« – Gruppenausstellung</h2>
+                        <p class=description>09.12.23–20.01.24 <br> Skulpturgalerie Osnabrück</p>
+                    </div>
+                </div>
+        </section>
+
+        <section id="contact">
+            <div class="container reveal">
+                <h1 class="mt10">Kontakt</h1>
+                <div class="row">
+<!--                     <div class="col-sm-12 col-md-6 socials">
+                        <object data="svg/Mail.svg" type="image/svg+xml" height="50"></object>
+                        <a href="mailto:zoe@mail.de">zoe@mail.de</a>
+                    </div> -->
+                    <div class="col-sm-12 col-md-6 socials">
+                        <object data="svg/Instagram.svg" type="image/svg+xml" height="50"></object>
+                        <a href="https://www.instagram.com/zoepehlke.art/?hl=de">@zoepehlke.art</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="vertSpacer"></div>
+            <div class="vertSpacer"></div>
+            <div class="vertSpacer"></div>
+        </section>
+
+    </main>
+    </div>
+
+    <footer class="mt-auto">
+        <div class="container vert-center">
+            <div class="pehlke"> <span class="firstname">ZOÉ</span><span class="lastname"> PEHLKE</span>
+                <div id="copyright">© 2025</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+   <!--  <script type="text/javascript" src="glide.js"></script> -->
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="p5circles.js"></script>
+
+
 </body>
+
 </html>
