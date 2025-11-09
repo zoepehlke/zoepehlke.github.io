@@ -44,7 +44,7 @@ h1 {
     color: $textcolor;
     display: inline-block;
     text-transform: uppercase;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 
@@ -813,11 +813,36 @@ p {
 
 .exhibition-year {
     font-weight: 700;
-    padding: 0rem 2rem 0 0;
+    padding: 0rem 0.1rem 0 0;
     white-space:nowrap;
     color:$textcolor_secondary;
+
+    @media (min-width: 576px) {
+    padding: 0rem 1.4rem 0 0;
+    }
+
+    @media (min-width: 768px) {
+    padding: 0rem 1.4rem 0 0;
+    }
+
+    @media (min-width: 992px) {
+    padding: 0rem 1.8rem 0 0;
+    }
+
 }
 
 th, td {
   padding: 15px;
+}
+
+td {
+    span {
+        display: block;
+        font-weight: inherit;
+        color: inherit;
+
+            @media (min-width: 768px) {
+                display: inline;
+    }
+    }
 }
