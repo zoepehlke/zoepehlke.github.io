@@ -795,28 +795,36 @@ p {
 
 .exhibition-year {
   font-weight: 700;
-  padding: 0rem 0.1rem 0 0;
+  padding-right: 0.9rem;
   white-space: nowrap;
   color: #575c72;
 }
 @media (min-width: 576px) {
   .exhibition-year {
-    padding: 0rem 1.4rem 0 0;
+    padding-right: 1.4rem;
   }
 }
 @media (min-width: 768px) {
   .exhibition-year {
-    padding: 0rem 1.4rem 0 0;
+    padding-right: 1.4rem;
   }
 }
 @media (min-width: 992px) {
   .exhibition-year {
-    padding: 0rem 1.8rem 0 0;
+    padding-right: 1.8rem;
   }
 }
 
 th, td {
-  padding: 15px;
+  vertical-align: top;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  th, td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 td span {
