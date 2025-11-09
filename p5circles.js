@@ -2,13 +2,13 @@
 const CONFIG = {
     COLORS: {
         BACKGROUND: '#ecececff',
-        OVERLAY_NORMAL: '#802c22b8',
-        OVERLAY_HOVERED: 'rgba(213, 82, 67, 0.41)',
+        OVERLAY_NORMAL: '#D55143cd',
+        OVERLAY_HOVERED: '#ad413586',
          TEXT: '#F1DFE7'
     },
     PHYSICS: {
         REPULSION_STRENGTH: 0.4,
-        MIN_DISTANCE_FACTOR: 2,
+        MIN_DISTANCE_FACTOR: 1.2,
         BORDER_REPULSION_STRENGTH: 0.5,
         BORDER_REPULSION_DISTANCE: 50,
         SPEED_SCALE_REFERENCE: 1000,
@@ -26,7 +26,10 @@ const CONFIG = {
     },
     PROJECT_URLS: {
         "Chiro": "./chiro.html",
-        "Tape und Papier": "./tape-und-papier.html"
+        "Tape und Papier": "./tape-und-papier.html",
+        "Neue Welten": "./neue-welten.html",
+        "Konstellationen": "./konstellationen.html",
+        "Mutation": "./mutation.html"
     }
 };
 
@@ -35,7 +38,10 @@ let circles = [];
 let circleImages = {};
 const projectCircles = [
     ["Chiro", 1],
-    ["Tape und Papier", 1]
+    ["Tape und Papier", 1],
+    ["Neue Welten", 1],
+    ["Konstellationen", 1],
+    ["Mutation", 1]
 ];
 
 /**
@@ -44,6 +50,9 @@ const projectCircles = [
 function preload() {
     circleImages["Chiro"] = loadImage("./img/circles/chiro-circle.png");
     circleImages["Tape und Papier"] = loadImage("./img/circles/tape-papier-circle.png");
+    circleImages["Neue Welten"] = loadImage("./img/circles/neue-welten-circle.png");
+    circleImages["Konstellationen"] = loadImage("./img/circles/konstellationen-circle.png");
+    circleImages["Mutation"] = loadImage("./img/circles/mutation-circle.png");
 }
 
 /**
