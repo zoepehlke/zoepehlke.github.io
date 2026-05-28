@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Zoé Pehlke">
+    <meta name="description"
+        content="Portfolio von Zoé Pehlke – Skulptur, Fotografie und Installation. Arbeiten, Ausstellungen und Kontakt.">
+    <title>Zoé Pehlke | Portfolio</title>
+    <meta property="og:title" content="Zoé Pehlke | Portfolio">
+    <meta property="og:description"
+        content="Portfolio von Zoé Pehlke – Skulptur, Fotografie und Installation. Arbeiten, Ausstellungen und Kontakt.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zoe-pehlke.de/">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:image" content="https://zoe-pehlke.de/img/logo.webp">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="styles/style.css" rel="stylesheet">
+
+
+    <!-- generated from https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#2e68c4">
+    <meta name="msapplication-TileColor" content="#f5fdff">
+    <meta name="theme-color" content="#ffffff">
+    <script data-goatcounter="https://zoepehlkegoatcounter.goatcounter.com/count" async
+        src="//gc.zgo.at/count.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+    <header>
+        <div class="container alignNav">
+            <nav class="sticky-top">
+                <div class="nav-elements">
+                    <a class="nav-link active" href="#welcome">Home</a>
+                    <a class="nav-link" href="#projects">Arbeiten</a>
+                    <a class="nav-link" href="#exhibitions">Ausstellungen</a>
+                    <a class="nav-link" href="#contact">Kontakt</a>
+                </div>
+                <div class="bgLeft"></div>
+                <div class="bgRight"></div>
+                <div class="nav-highlighter"></div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+
+        <section id="welcome">
+            <div id="canvasContainer">
+            </div>
+        </section>
+
+        <section id="featured-exhibition" aria-labelledby="featured-exhibition-title">
+            <div class="container reveal">
+                <div class="featured-exhibition__card">
+                    <p class="featured-exhibition__label">Aktuelle Ausstellung</p>
+                    <h2 id="featured-exhibition-title" class="featured-exhibition__title">MUTATION - Transformation,
+                        Kontrollverlust und Irreversibilität</h2>
+                    <p class="featured-exhibition__meta">
+                        <span class="featured-exhibition__location">EMMA 11 – Selfsupporting Free Art Room
+                            Emmaweg 11, 7551 BG Hengelo, Niederlande</span>
+                        <span class="featured-exhibition__separator" aria-hidden="true">·</span>
+                        <time class="featured-exhibition__dates" datetime="">30. und 31. Mai, 6. und 7. Juni 2026, 14-18
+                            Uhr</time>
+                    </p>
+                    <p class="featured-exhibition__description">Ausstellungseröffnung am Samstag, 29. Mai um 14 Uhr</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container reveal ">
+                <h1 class="mt10">Arbeiten</h1>
+
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="project-mutation">
+                        <div class="projectContent">
+                            <a href="./mutation.html"><img class="bg-image" src="./img/Mutation/Mutation_Preview.webp"
+                                    alt="Mutation" width="800" height="600" loading="lazy"></a>
+                            <h2>Mutation</h2>
+                            <p class="description">Projektausstellung</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="project-konstellationen">
+                        <div class="projectContent">
+                            <a href="./konstellationen.html"><img class="bg-image"
+                                    src="./img/Konstellationen/Konstellationen_Preview.webp" alt="Konstellationen"
+                                    width="800" height="600" loading="lazy"></a>
+                            <h2>Konstellationen</h2>
+                            <p class="description">Fahrradschläuche, Stecknadeln & Nägel</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="project-chiro">
+                        <div class="projectContent">
+                            <a href="./chiro.html"><img class="bg-image" src="./img/Chiro/Chiro_Preview.webp"
+                                    alt="Chiro" width="800" height="600" loading="lazy"></a>
+                            <h2>Chiro</h2>
+                            <p class="description">Fahrradschläuche, Stecknadeln & Nägel</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="project-tape-und-papier">
+                        <div class="projectContent">
+                            <a href="./tape-und-papier.html"><img class="bg-image"
+                                    src="./img/Tape_und_Papier/Tape_und_Papier_Preview.webp" alt="Tape und Papier"
+                                    width="800" height="600" loading="lazy"></a>
+                            <h2>Tape und Papier</h2>
+                            <p class="description">Werkreihe aus Klebeband und Zeitungspapier</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="project-neue-welten">
+                        <div class="projectContent">
+                            <a href="./neue-welten.html"><img class="bg-image"
+                                    src="./img/Neue_Welten/Neue_Welten_Preview.webp" alt="Neue Welten" width="800"
+                                    height="600" loading="lazy"></a>
+                            <h2>Neue Welten</h2>
+                            <p class="description">Fotografie-Reihe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="exhibitions">
+            <div class="container reveal">
+                <h1 class="mt10">Ausstellungen</h1>
+                <div class="exhibitionContent">
+                    <table>
+                        <tbody>
+
+                            <tr>
+                                <td class="exhibition-year">2026</td>
+                                <td class="exhibition-details">Projektausstellung Mutation - Transformation,
+                                    Kontrollverlust und
+                                    Irreversibilität - EMMA 11 – Selfsupporting Free Art Room in Hengelo, Niederlande
+                                    <br>Projekt Mutation mit Birgit Kannengießer, Ricardo
+                                    Liong-A-Kong, Zoé Pehlke, Margit Rusert und Hendrik Spiess
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2026</td>
+                                <td class="exhibition-details">AMU-Ausstellung „Homegrown“ - KunstQuartier/BBK Osnabrück
+                                    <br>Projekt Mutation mit Birgit Kannengießer, Ricardo
+                                    Liong-A-Kong, Zoé Pehlke, Margit Rusert und Hendrik Spiess
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2026</td>
+                                <td class="exhibition-details">Spiegelungen der Wirklichkeit - Fotoausstellung, Forum am
+                                    Dom Osnabrück</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2025</td>
+                                <td class="exhibition-details">Projektausstellung Mutation – Transformation,
+                                    Kontrollverlust und Irreversibilität, KunstSprung Osnabrück <br>Projekt Mutation
+                                    mit Birgit Kannengießer, Ricardo
+                                    Liong-A-Kong, Zoé Pehlke, Margit Rusert und Hendrik Spiess</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2025</td>
+                                <td class="exhibition-details">5ausRaum12, Skulpturgalerie Osnabrück</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2025</td>
+                                <td class="exhibition-details">Jahresausstellung des Instituts Kunst/Kunstpädagogik der
+                                    Universität Osnabrück</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2024</td>
+                                <td class="exhibition-details">Gruppenausstellung Material und Grenzen
+                                    (Bildhauereiklasse UOS), Skulpturgalerie Osnabrück</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2024</td>
+                                <td class="exhibition-details">Lange Nacht der Ateliers, Atelierhaus Nobbenburg,
+                                    Osnabrück</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2024</td>
+                                <td class="exhibition-details">Kulturnacht, Atelierhaus Nobbenburg, Osnabrück</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2024</td>
+                                <td class="exhibition-details">Atelierhaus Nobbenburg stellt sich vor, Vitrine
+                                    Dielingerstraße, Osnabrück</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2024</td>
+                                <td class="exhibition-details">Gruppenausstellung 3D’23 in der Skulpturgalerie</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2023</td>
+                                <td class="exhibition-details">Gruppenausstellung Skulpturgalerie (Künstler*innen aus
+                                    der Region)</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2023</td>
+                                <td class="exhibition-details">Gruppenausstellung Skulpturgalerie „Campus“</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2023</td>
+                                <td class="exhibition-details">Jahresausstellung des Instituts Kunst/Kunstpädagogik der
+                                    Universität Osnabrück</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">2022</td>
+                                <td class="exhibition-details">Fotografie „Perspektiven“ im Kunsthaus Göttingen im
+                                    Rahmen des Fotowettbewerbs „Wände der Welt“</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="awards">Auszeichnungen/Förderungen</h3>
+                <div class="exhibitionContent">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="exhibition-year">
+                                    <span>Februar</span>
+                                    <span>2025</span>
+                                </td>
+                                <td class="exhibition-details">2. Platz beim Kunstförderpreis der
+                                    Ingeborg-Sieber-Stiftung 2025 als Teil des Kollektivs „6inRaum12“ im Rahmen der
+                                    Jahresausstellung des Kunstinstituts der Universität Osnabrück</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">
+                                    <span>Juni 2024</span>
+                                    <span> bis </span>
+                                    <span>Juni 2026</span>
+                                </td>
+                                <td class="exhibition-details">Atelierstipendium „Atelierhaus für junge
+                                    Künstler*innen“, Atelierhaus Nobbenburg in Osnabrück finanziert durch Nils Köster
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">
+                                    <span>Februar</span>
+                                    <span>2023</span>
+                                </td>
+                                <td class="exhibition-details">Nominierung für den Kunstförderpreis der
+                                    Ingeborg-Sieber-Stiftung 2023 im Bereich Bildhauerei</td>
+                            </tr>
+                            <tr>
+                                <td class="exhibition-year">
+                                    <span>Dezember</span>
+                                    <span>2022</span>
+                                </td>
+                                <td class="exhibition-details">1. Platz beim Fotowettbewerb „Wände der Welt“ vom
+                                    Kunsthaus Göttingen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container reveal">
+                <h1 class="mt10">Kontakt</h1>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 socials">
+                        <object data="svg/Instagram.svg" type="image/svg+xml" height="50" aria-hidden="true"></object>
+                        <a href="https://www.instagram.com/zoepehlke.art/?hl=de"
+                            aria-label="Instagram-Profil @zoepehlke.art">@zoepehlke.art</a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 socials">
+                        <object data="svg/Mail.svg" type="image/svg+xml" height="50" aria-hidden="true"></object>
+                        <a href="mailto:z.pehlke@gmail.com"
+                            aria-label="E-Mail an z.pehlke@gmail.com">z.pehlke@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="vertSpacer"></div>
+            <div class="vertSpacer"></div>
+            <div class="vertSpacer"></div>
+        </section>
+
+    </main>
+
+    <footer class="mt-auto">
+        <div class="container vert-center">
+            <div class="pehlke"> <span class="firstname">ZOÉ</span><span class="lastname"> PEHLKE</span>
+                <div id="copyright">© 2025</div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="p5circles.js"></script>
+
+
+</body>
+
+</html>
